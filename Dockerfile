@@ -5,6 +5,7 @@ MAINTAINER Silvio Fricke <silvio.fricke@gmail.com>
 
 # update and upgrade
 RUN export DEBIAN_FRONTEND=noninteractive \
+    && export REPORT_STATS=yes \
     && apt-get update -y \
     && apt-get upgrade -y \
     && apt-get install -y \
